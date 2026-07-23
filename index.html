@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kritik Modi — Software Engineer</title>
+<meta name="description" content="Kritik Modi — software engineer building fast, reliable products. Portfolio, projects, and contact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ambient grid backdrop -->
+<div class="grid-backdrop" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav__logo">km<span class="cursor-blip">_</span></a>
+  <nav class="nav__links" id="navLinks">
+    <a href="#about" data-path="~/about">about</a>
+    <a href="#skills" data-path="~/skills">skills</a>
+    <a href="#projects" data-path="~/projects">projects</a>
+    <a href="#contact" data-path="~/contact">contact</a>
+  </nav>
+  <a href="#contact" class="nav__cta">say hello</a>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__inner">
+      <div class="editor-window hero__editor">
+        <div class="editor-window__bar">
+          <div class="editor-window__dots"><span></span><span></span><span></span></div>
+          <span class="editor-window__filename">about_kritik.js</span>
+          <span class="editor-window__lang">JavaScript</span>
+        </div>
+        <div class="editor-window__body">
+<pre><code><span class="tok-com">// portfolio.init()</span>
+<span class="tok-kw">const</span> <span class="tok-var">kritik</span> = {
+  <span class="tok-key">role</span>: <span class="tok-str">"Software Engineer"</span>,
+  <span class="tok-key">focus</span>: [<span class="tok-str">"backend"</span>, <span class="tok-str">"systems"</span>, <span class="tok-str">"dev tools"</span>],
+  <span class="tok-key">status</span>: <span class="typed-line" id="typedStatus"></span><span class="type-caret">|</span>
+};</code></pre>
+        </div>
+      </div>
+
+      <div class="hero__copy">
+        <p class="eyebrow">// hello, world</p>
+        <h1 class="hero__title">Kritik Modi<br><span class="hero__title-sub">builds things that ship.</span></h1>
+        <p class="hero__lede">Software engineer focused on backend systems, clean APIs, and tools that make other developers faster. I like problems with sharp edges and code that reads like it was easy.</p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">view projects</a>
+          <a href="#contact" class="btn btn--ghost">get in touch</a>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll to About">
+      <span>scroll</span>
+      <svg width="14" height="20" viewBox="0 0 14 20" fill="none"><path d="M7 1v17M1 12l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section__head">
+      <span class="section__path">~/about</span>
+      <h2 class="section__title">About</h2>
+    </div>
+    <div class="about__grid">
+      <div class="about__text">
+        <p>I'm a software engineer who likes the unglamorous parts of the job: the migration that has to run at 3am without waking anyone up, the API that's boring enough to trust, the internal tool that saves twenty minutes a day for a team of ten.</p>
+        <p>Most of my work lives on the backend — services, data pipelines, and the plumbing that holds a product together — but I'm equally comfortable pairing on frontend work or writing the CLI nobody asked for but everybody uses by week two.</p>
+        <p>Outside of client work I spend time on open source, write up what I learn, and keep a running list of ideas that are probably weekend projects and definitely not startups.</p>
+        <a href="#" class="text-link" id="resumeLink">download résumé →</a>
+      </div>
+      <aside class="about__facts">
+        <div class="fact-card">
+          <span class="fact-card__label">based in</span>
+          <span class="fact-card__value" id="aboutLocation">India</span>
+        </div>
+        <div class="fact-card">
+          <span class="fact-card__label">experience</span>
+          <span class="fact-card__value">3+ years</span>
+        </div>
+        <div class="fact-card">
+          <span class="fact-card__label">currently</span>
+          <span class="fact-card__value">open to new roles</span>
+        </div>
+        <div class="fact-card">
+          <span class="fact-card__label">stack</span>
+          <span class="fact-card__value">Node · Python · React</span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section--alt" id="skills">
+    <div class="section__head">
+      <span class="section__path">~/skills</span>
+      <h2 class="section__title">Skills</h2>
+    </div>
+    <div class="skills__grid">
+
+      <div class="skill-block">
+        <h3 class="skill-block__title">languages</h3>
+        <ul class="tag-list">
+          <li>JavaScript</li><li>TypeScript</li><li>Python</li><li>Go</li><li>SQL</li>
+        </ul>
+      </div>
+
+      <div class="skill-block">
+        <h3 class="skill-block__title">frontend</h3>
+        <ul class="tag-list">
+          <li>React</li><li>Next.js</li><li>HTML/CSS</li><li>Tailwind</li>
+        </ul>
+      </div>
+
+      <div class="skill-block">
+        <h3 class="skill-block__title">backend</h3>
+        <ul class="tag-list">
+          <li>Node.js</li><li>Express</li><li>Django</li><li>REST &amp; GraphQL</li>
+        </ul>
+      </div>
+
+      <div class="skill-block">
+        <h3 class="skill-block__title">data &amp; infra</h3>
+        <ul class="tag-list">
+          <li>PostgreSQL</li><li>Redis</li><li>Docker</li><li>AWS</li><li>CI/CD</li>
+        </ul>
+      </div>
+
+      <div class="skill-block">
+        <h3 class="skill-block__title">tools</h3>
+        <ul class="tag-list">
+          <li>Git</li><li>Linux</li><li>Figma</li><li>Postman</li>
+        </ul>
+      </div>
+
+      <div class="skill-block">
+        <h3 class="skill-block__title">practices</h3>
+        <ul class="tag-list">
+          <li>Testing</li><li>Code review</li><li>System design</li><li>Agile</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section__head">
+      <span class="section__path">~/projects</span>
+      <h2 class="section__title">Projects</h2>
+    </div>
+    <div class="projects__grid">
+
+      <article class="project-card">
+        <div class="project-card__head">
+          <span class="project-card__folder">📁</span>
+          <h3>Project One</h3>
+        </div>
+        <p>A short, honest description of what this project does and the problem it solves for its users. Swap this copy for your real project.</p>
+        <ul class="project-card__stack">
+          <li>React</li><li>Node.js</li><li>PostgreSQL</li>
+        </ul>
+        <div class="project-card__links">
+          <a href="#" class="text-link">live site →</a>
+          <a href="#" class="text-link">source →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__head">
+          <span class="project-card__folder">📁</span>
+          <h3>Project Two</h3>
+        </div>
+        <p>Another project summary — what it is, who it's for, and the one detail worth bragging about. Replace with your real work.</p>
+        <ul class="project-card__stack">
+          <li>Python</li><li>Django</li><li>Redis</li>
+        </ul>
+        <div class="project-card__links">
+          <a href="#" class="text-link">live site →</a>
+          <a href="#" class="text-link">source →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__head">
+          <span class="project-card__folder">📁</span>
+          <h3>Project Three</h3>
+        </div>
+        <p>A third project — maybe a CLI tool, a library, or an open-source contribution worth showing off in detail.</p>
+        <ul class="project-card__stack">
+          <li>TypeScript</li><li>Go</li><li>Docker</li>
+        </ul>
+        <div class="project-card__links">
+          <a href="#" class="text-link">live site →</a>
+          <a href="#" class="text-link">source →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__head">
+          <span class="project-card__folder">📁</span>
+          <h3>Project Four</h3>
+        </div>
+        <p>Keep the strongest four projects here. Quality over quantity — link out to the rest from GitHub.</p>
+        <ul class="project-card__stack">
+          <li>Next.js</li><li>GraphQL</li><li>AWS</li>
+        </ul>
+        <div class="project-card__links">
+          <a href="#" class="text-link">live site →</a>
+          <a href="#" class="text-link">source →</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--alt" id="contact">
+    <div class="section__head">
+      <span class="section__path">~/contact</span>
+      <h2 class="section__title">Contact</h2>
+    </div>
+    <div class="contact__grid">
+      <div class="contact__intro">
+        <p>Have a role, a project, or just want to talk shop? My inbox is open.</p>
+        <ul class="contact__list">
+          <li><span>email</span><a href="mailto:kritik.modi@example.com">kritik.modi@example.com</a></li>
+          <li><span>github</span><a href="https://github.com/kritikmodi" target="_blank" rel="noopener">github.com/kritikmodi</a></li>
+          <li><span>linkedin</span><a href="https://linkedin.com/in/kritikmodi" target="_blank" rel="noopener">linkedin.com/in/kritikmodi</a></li>
+          <li><span>twitter</span><a href="https://twitter.com/kritikmodi" target="_blank" rel="noopener">@kritikmodi</a></li>
+        </ul>
+      </div>
+
+      <form class="contact__form" id="contactForm">
+        <div class="form-row">
+          <label for="name">name</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+        </div>
+        <div class="form-row">
+          <label for="email">email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div class="form-row">
+          <label for="message">message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary">send message</button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="statusbar" id="statusbar">
+  <div class="statusbar__left">
+    <span class="statusbar__dot"></span>
+    <span id="statusSection">~/top</span>
+  </div>
+  <div class="statusbar__right">
+    <span>UTF-8</span>
+    <span>© <span id="year"></span> Kritik Modi</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
